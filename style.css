@@ -1,0 +1,561 @@
+
+.background-img{
+    background: url("media/landscape.jpg");
+    height: 40rem;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bg-img-content{
+    color: white;
+    max-width: 50rem;
+    font-size:x-large;
+    margin-left: 20%;
+}
+.bg-img-content h3,.bg-img-content h1{
+    margin: 40px 0;
+}
+.bg-img-content a{
+    text-decoration: none;
+    background: #9BB8CD;
+    color: white;
+    padding:0.8rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.bg-img-content a:hover{
+    background-color: rgb(108, 165, 21);
+}
+
+.icon-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 20rem;
+}
+.icon-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-list i{
+    border: 1px solid transparent;
+    background: lightgrey;
+    padding: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 3rem;
+    text-align: center;
+}
+.icon-list h3{
+    text-align: center;
+    margin: 20px 0;
+}
+.section-two{
+    background: url("media/colors.jpeg");
+    height: 35rem;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.section-two video{
+    height: 30rem;
+    width: auto;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.video-content{
+    position: absolute;
+    background-color:white;
+    padding: 50px;
+    left: 5%;
+    right: 40%;
+    z-index: 1;
+    top: 25%;
+    width: auto;
+    line-height: 2rem;
+    min-height: 10rem;
+}
+.video-content a{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    background: #9BB8CD;
+    padding: 10px;
+    right: 0;
+    bottom: 0;
+}
+.dark-para{
+    font-weight: bold;
+    margin: 10px 0;
+}
+.light-para{
+    margin: 10px 0;
+}
+.features{
+    min-height: 70rem;
+    width: 80%;
+    margin: 100px auto;
+}
+.features h1{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.features-image img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+ .features-image{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,25vw);
+    grid-template-rows: repeat(6,10rem);
+
+}
+.image-box{
+    height: 100%;
+}
+.image-box-1{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+.image-box-2{
+    grid-row: 1 / 4;
+    grid-column: 2/3;
+
+}
+.image-box-3{
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+.image-box-4{
+    grid-row: 3/5;
+    grid-column: 1/2;
+}
+.image-box-5{
+    grid-row: 4/7;
+    grid-column: 2/3;
+} 
+.image-box-6{
+    grid-row: 3/5;
+    grid-column: 3/4;
+}
+.image-box-7{
+    grid-row: 5/7;
+}
+.image-box-8{
+    grid-row: 5/7;
+}
+.image-box{
+    position: relative;
+    overflow: hidden;
+}
+.image-box img{
+    position: absolute;
+    width: 100%;
+    filter: grayscale(50%);
+}
+.features-image-content{
+    position: absolute;
+    color: white;
+    bottom: -3.3rem;
+    left: 1rem;
+    z-index: 2;
+}
+.image-box:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+    transition: 1s;
+    z-index: 1;
+}
+.features-image-content h1{
+    margin: 1rem 0;
+    width: fit-content;
+}
+.features-image-content h2{
+    background: #9BB8CD;
+    width: 3rem;
+    padding: 0.3rem;
+    margin: 1rem 0;
+}
+
+.image-box img:hover{
+    background: rgba(0,0,0,0.7);
+}
+.image-box:hover .features-image-content{
+    bottom: 3rem;
+    transition: 1s;
+}
+
+.why{
+    background: url("media/bali.jpg");
+    display: flex;
+    width: 100%;
+    min-height: 50rem;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1rem 0;
+}
+.why-box{
+    position: relative;
+    width: 90%;
+    height: 20rem;
+    margin: 5rem 0;
+}
+.blur-box{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    min-height: 100%;
+    width: 100%;
+}
+.why-container{
+    height: 100%;
+    width: 90%;
+    padding: 2rem;
+    position: absolute;
+    z-index: 1;  
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.why-container div{
+    width: 13rem;
+    margin: 0 2rem;
+}
+.why-container i{
+    font-size: 4rem;
+    margin: 1rem;
+}
+.review{
+    width: 100%;
+    min-height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30rem auto;
+}
+.review-in{
+    max-width: 30rem;
+}
+.review-in div{
+    display: flex;
+}
+.review-inner{
+
+    display: flex;
+    flex-direction: column;
+}
+.review-in img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px;
+    object-fit: cover;
+    margin: auto;
+}
+.review i{
+    font-size: 5rem;
+    margin: 2rem;
+}
+.review-inner p{
+    line-height: 2rem;
+}
+.dark-review{
+    font-weight: bold;
+}
+.review-in-two{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.review-in-two a{
+    text-decoration: none;
+    background: #9BB8CD;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0;
+
+    width: 10rem;
+    text-align: center;
+}
+.review-in-two a:hover{
+    background-color: rgb(108, 165, 21);
+}
+
+
+ /* media query */
+
+ @media (max-width:60rem) {
+    .background-img{
+        height: 25rem;
+    }
+    .bg-img-content{
+        max-width: 30rem;
+        font-size:medium;
+        margin-left: 10%;
+    }
+    .bg-img-content h3,.bg-img-content h1{
+        margin: 1.5rem 0;
+    }
+    .icon-list i{
+        border: 1px solid transparent;
+        background: lightgrey;
+        padding: 20px;
+        width: 40px;
+        font-size: 2rem;
+    }
+    .icon-list h3{
+        font-size: 15px;
+    }
+    .why{
+        min-height: 40rem;
+    }
+    .section-two{
+        height: 20rem;
+        margin-bottom: 35rem;
+    }
+    .section-two video{
+        height: auto;
+        width:100%;
+        top: 100%;
+        right: 0;
+    }
+    .video-content{
+        padding: 2rem 1.5rem;
+        width: 85%;
+        z-index: 1;
+        top: 2rem;
+        margin: auto;
+        left: 2rem;
+    }
+    .video-content a{
+        padding: 0.5rem;
+    }
+    .features{
+        height: 70rem;
+        width: 90%;
+    }
+    .features-image{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,15rem);
+    
+    }
+    .image-box{
+        height: 100%;
+        width: 100%;
+    }
+    .image-box-1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .image-box-2{
+        grid-row: 1 / 2;
+        grid-column: 2/3;
+    
+    }
+    .image-box-3{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .image-box-4{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .image-box-5{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    } 
+    .image-box-6{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    .image-box-7{
+        grid-row: 4/5;
+    }
+    .image-box-8{
+        grid-row: 4/5;
+    }
+    .image-box{
+        position: relative;
+        overflow: hidden;
+    }
+    .image-box img{
+        position: absolute;
+        filter: grayscale(50%);
+    }
+ 
+    .features-image-content h1{
+        margin: 1rem 0;
+        width: fit-content;
+    }
+    .features-image-content h2{
+        background: #9BB8CD;
+        width: 3rem;
+        padding: 0.3rem;
+        margin: 1rem 0;
+    }
+    .review{
+        width: 95%;
+    }
+    .review i{
+        font-size: 2.5rem;
+        margin: 2rem;
+    }
+    .review-in{
+        width: auto;
+    }
+    .review a{
+        padding:1rem 0.5rem;
+    }
+ }
+ @media (max-width:50rem) {
+    .section-two{
+        margin-bottom: 28rem;
+    }
+ }
+ @media (max-width:40rem){
+
+    .background-img{
+        width: 100%;
+        justify-content: center;
+        height: 20rem;
+    }
+    .bg-img-content{
+        margin: auto;
+        text-align: center;
+    }
+    .icon-section i{
+        font-size: 1.5rem;
+        padding: 1rem;
+        height: 2rem;
+        width: 2rem;
+    }
+    .icon-list h3{
+        font-size: 12px;
+    }
+   .section-two{
+    width: 100%;
+    background-image: none;
+    margin-bottom: 22rem;
+   }
+    .video-content{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        top: 0;
+        margin: auto;
+        left: 0;
+        padding: 2rem;
+        box-sizing: border-box;
+        line-height: normal;
+    }
+    .video-content a{
+        padding: 0.5rem;
+    }
+    .section-two video{
+        left: 0;
+    }
+    .review{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: auto;
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
+    .review-in{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+   .review-in-two{
+   width: fit-content;
+    font-size: small;
+   }
+   .review-in-two h1{
+    font-size: 1.5rem;
+   }
+  .review i{
+    font-size: 2rem;
+  }
+    .why{
+       
+        min-height: 50rem;
+    }
+    .why-box{
+        width: 100%;
+        min-height: 30rem;
+        margin: 0;
+    }
+   .blur-box{
+    height: 120%;
+   }
+    .why-container{
+        height: 100%;
+        width: 100%;
+        padding:1.5rem 0;
+        margin: auto;
+        position: absolute;
+        z-index: 1;  
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .why-container div{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .why-container i{
+        font-size: 3rem;
+        margin: 1rem;
+    }
+ }
+@media (max-width:30rem) {
+    .why h1{
+        font-size: 1.5rem;
+    }
+    .review-in-two a{
+        padding: 1rem;
+        
+    }
+   
+    .section-two{
+        width: 100%;
+        margin-bottom: 16rem;
+    }
+    .review-in{
+        width: 15rem;
+    }
+    .video-content{
+        width: 100%;
+        font-size: small;
+    }
+    .features-image-content{
+        left: 0;
+    }
+    .features-image-content h1{
+        font-size: 1.5rem;
+    }
+    .side-nav{
+        width: 50vw;
+    }
+}

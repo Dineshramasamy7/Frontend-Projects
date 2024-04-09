@@ -1,0 +1,281 @@
+.hispaniola{
+    height: 25rem;
+    background: url("../media/girl-cute.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hispaniola div{
+    margin-left: 20%;
+    line-height: 5rem;
+    font-size: x-large;
+}
+.carribean{
+    margin-top: 3rem;
+    min-height: 20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.carribean div{
+    text-align: center;
+    width: 650px;
+    line-height: 2rem;
+}
+.carribean div p{
+    margin: 2rem 0;
+}
+.three-pics{
+    width: 100%;
+    display: flex;
+}
+.three-pics img{
+    object-fit: cover;
+    width: 33.3%;
+}
+.geography{
+    min-height: 35rem;
+    width: 100%;
+    display: flex;
+    background: rgb(237, 230, 230);
+}
+.geography-in{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+.geography-content{
+    margin-right: 5vw ;
+    line-height: 1.5rem;
+}
+.geography-content h1{
+    margin-top: 1rem;
+}
+.geography-content p{
+    margin: 1rem 0;
+}
+.map img{
+    height: 15rem;
+    max-width: 25rem;
+}
+.map-content{
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    background: white;
+    position: relative;
+}
+.map-content i{
+    position: absolute;
+    left: -1rem;
+    top: -1rem;
+    font-size: 3rem;
+    color: #EEC759;
+}
+.ship-background{
+    background: url("../media/ship.jpg");
+    background-size: cover;
+    min-height: 30rem;
+    width: 100%;
+    display: flex;
+}
+.ship-background div{
+    text-align: center;
+    color: white;
+    width: 65%;
+    margin: auto;
+}
+.history{
+    min-height: 25rem;
+    text-align: center;
+    padding: 1rem;
+}
+.history h1{
+    margin: 1rem;
+}
+.history div{
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+}
+.history div p{
+    padding:1rem 2rem;
+}
+/* VIDEO CONTENT */
+.section-two{
+    background: url("../media/sky.jpeg");   
+     height: 35rem;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.section-two video{
+    height: 30rem;
+    width: auto;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.video-content{
+    position: absolute;
+    background-color:white;
+    padding: 50px;
+    left: 5%;
+    right: 40%;
+    z-index: 1;
+    top: 25%;
+    width: auto;
+    line-height: 2rem;
+    min-height: 10rem;
+}
+.video-content a{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    background: #9BB8CD;
+    padding: 10px;
+    right: 0;
+    bottom: 0;
+}
+.dark-para{
+    font-weight: bold;
+    margin: 10px;
+}
+.light-para{
+    margin: 10px;
+}
+
+/* media query */
+@media (max-width:60rem) {
+    .hispaniola{
+        height: 20rem;
+    }
+    .hispaniola div{
+        max-width: 20rem;
+        font-size:medium;
+        margin-left: 10%;
+        line-height: 4rem;
+    }
+    .geography-in{
+        width: 90%;
+    }
+    .map img{
+        height: 12rem;
+        max-width: 15rem;
+    }
+    .ship-background div{
+        width: 80%;
+    }
+
+    .section-two{
+        height: 20rem;
+        margin-bottom: 33rem;
+    }
+    .section-two video{
+        height: auto;
+        width:100%;
+        top: 100%;
+        right: 0;
+    }
+    .video-content{
+        padding: 20px;
+        width: 85%;
+        z-index: 1;
+        top: 2rem;
+        margin: auto;
+        left: 2rem;
+    }
+    .video-content a{
+        padding: 0.5rem;
+    }
+}
+@media (max-width:50rem) {
+    .section-two{
+        margin-bottom: 27.5rem;
+    }
+}
+@media (max-width:40rem) {
+    .hispaniola{
+        justify-content: center;
+        text-align: center;
+        min-height: 15rem;
+    }
+    .hispaniola div{
+        margin: 0;
+    }
+    .geography-in{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .map img{
+        height: auto;
+        max-width: 100%;
+    }
+    .geography-content{
+        margin-right: 0 ;
+        line-height: 1.5rem;
+    }
+    .ship-background div{
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    .section-two{
+        width: 100%;
+        background-image: none;
+        margin-bottom: 22rem;
+       }
+        .video-content{
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            top: 0;
+            margin: auto;
+            left: 0;
+            padding: 2rem;
+            box-sizing: border-box;
+            line-height: normal;
+        }
+        .video-content>p,
+        .video-content>h1{
+            margin: 1rem;
+        }
+        .video-content a{
+            padding: 0.5rem;
+        }
+        .section-two video{
+            left: 0;
+        }
+}
+@media (max-width:30rem) {
+    .history{
+        padding: 0;
+    }
+    .history div p{
+        padding:1rem 0;
+    }
+    .ship-background div{
+        width: 95%;
+        font-size: 0.8rem;
+    }
+    .section-two{
+        margin-bottom: 18rem;
+    }
+    .video-content{
+        width: 100%;
+        font-size: small;
+    }
+    .features-image-content{
+        left: 0;
+    }
+    .features-image-content h1{
+        font-size: 1.5rem;
+    }
+}
